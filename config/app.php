@@ -171,11 +171,14 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Alexa\Providers\AppServiceProvider::class,
+        Alexa\Providers\AuthServiceProvider::class,
+        // Alexa\Providers\BroadcastServiceProvider::class,
+        Alexa\Providers\EventServiceProvider::class,
+        Alexa\Providers\RouteServiceProvider::class,
+
+        //Alexa Packages
+        Develpr\AlexaApp\Provider\LaravelServiceProvider::class,
 
     ],
 
@@ -225,6 +228,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //Alexa injection
+        'AlexaRoute' => \Develpr\AlexaApp\Facades\AlexaRouter::class,
+        'Alexa' => \Develpr\AlexaApp\Facades\Alexa::class,
 
     ],
 

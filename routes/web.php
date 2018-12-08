@@ -11,15 +11,17 @@
 |
 */
 
-Route::get( '/', function () {
-
-	$text = "\"I'm here to chew gum and kick ass... and I'm all out of gum.\" - Riaan de Lange";
-
-
-
-
-	return view( 'welcome', compact( 'text' ) );
-} );
+//Route::post( '/', function () {
+//
+//
+//	return Alexa::say("Why was the little boy crying? Because he had a frog stapled to his face!");
+//
+//
+//
+//
+//
+//	return view( 'welcome', compact( 'text' ) );
+//} );
 
 Route::get( '/tasks/{id}', function ( $id ) {
 
@@ -36,3 +38,21 @@ Route::get( '/tasks', function () {
 
 	return view( 'tasks.show', compact( 'tasks' ) );
 } );
+
+Route::get( '/alexa-end-point', 'App\Http\Controllers\Controller@hello' );
+Route::post( '/alexa-end-point', 'App\Http\Controllers\Controller@hello' );
+
+
+//AlexaRoute::launch('/', 'hello', function(){
+//	Alexa::say("Why was the little boy crying? Because he had a frog stapled to his face!");
+//});
+//
+//AlexaRoute::intent('/alexa-end-point', 'GetHelpIntent', function(){
+//	return Alexa::say("Oh hi Denny");
+//
+//});
+
+
+
+//AlexaRoute::launch( '/alexa-end-point', 'App\Http\Controllers\Controller@hello' );
+

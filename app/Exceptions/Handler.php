@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Alexa\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

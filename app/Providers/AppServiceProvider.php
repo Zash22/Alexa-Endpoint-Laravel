@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Alexa\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

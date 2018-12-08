@@ -4,9 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c7393d2b9445583d49ca414e2727bf2",
-    "content-hash": "cf109e55ac11e54d9f2ffce793b48b54",
+    "hash": "35ff34dd70a3504b04d0db1f44f736bb",
+    "content-hash": "802bf88949f78bd547df2f0c9db93e40",
     "packages": [
+        {
+            "name": "develpr/alexa-app",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/develpr/alexa-app.git",
+                "reference": "8200ce516efa486dbd5a5221ee98149fc01748ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/develpr/alexa-app/zipball/8200ce516efa486dbd5a5221ee98149fc01748ad",
+                "reference": "8200ce516efa486dbd5a5221ee98149fc01748ad",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "~5.4",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.9",
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Develpr\\AlexaApp\\Provider\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "AlexaRoute": "Develpr\\AlexaApp\\Facades\\AlexaRouter",
+                        "Alexa": "Develpr\\AlexaApp\\Facades\\Alexa"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Develpr\\AlexaApp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Mitchell",
+                    "email": "kevin@develpr.com"
+                }
+            ],
+            "description": "Set of classes to make creating simple Amazon Echo Alexa Apps easier with Lumen and to a lesser extent Laravel",
+            "keywords": [
+                "Alexa",
+                "AlexaApp",
+                "Amazon Echo",
+                "echo",
+                "laravel",
+                "lumen"
+            ],
+            "time": "2017-11-10 13:20:05"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
